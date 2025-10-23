@@ -9,10 +9,72 @@ body {
 }
 
 .block {
+  position: relative;
   background: url("./image/main-bg.jpg") no-repeat center;
   background-size: cover;
   width: 1440px;
   height: 800px;
+}
+
+.block-svg1 {
+  position: absolute;
+  top: 69px;
+  left: 156px;
+}
+
+.block-svg2 {
+  position: absolute;
+  top: 94px;
+  left: 63px;
+}
+
+.block-svg3 {
+  position: absolute;
+  bottom: 210px;
+  left: 929px;
+  transform: rotate(130deg);
+}
+
+.block-svg4 {
+  position: absolute;
+  top: 538px;
+  left: 948px;
+}
+
+.block-svg5 {
+  position: absolute;
+  top: 568px;
+  left: 1013px;
+}
+
+.block-svg6 {
+  position: absolute;
+  top: 468px;
+  left: 1247px;
+}
+
+.block-svg7 {
+  position: absolute;
+  top: 0px;
+  left: 854px;
+}
+
+.block-svg8 {
+  position: absolute;
+  top: 254px;
+  left: 1067px;
+}
+
+.block-svg9 {
+  position: absolute;
+  top: 379px;
+  left: 1225px;
+}
+
+.block-svg10 {
+  position: absolute;
+  top: 663px;
+  left: 1345px;
 }
 
 .block-section {
@@ -21,13 +83,11 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   padding-left: 120px;
-  
   &__title {
     font-size: 64px;
     font-weight: 700;
     line-height: 100%;
     padding-bottom: 24px;
-
     padding-top: 196px;
   }
   &__description {
@@ -35,4 +95,30 @@ body {
     font-weight: 700;
     line-height: 32px;
   }
+}
+
+.block-button {
+  margin-top: 48px;
+  width: 247px;
+  height: 66px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  border: 1px solid #000;
+  background: black;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.block-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.block-animation {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; 
 }
