@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+.block {
+  background: url("./image/main-bg.jpg") no-repeat center;
+  background-size: cover;
+  width: 1440px;
+  height: 800px;
+}
+
+.block-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 120px;
+}
+.block-section__title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 100%;
+  padding-bottom: 24px;
+  padding-top: 196px;
+}
+.block-section__description {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}/*# sourceMappingURL=style.css.map */
