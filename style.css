@@ -8,12 +8,10 @@ body {
   font-family: "Montserrat";
 }
 
-.block {
-  position: relative;
-  background: url("./image/main-bg.jpg") no-repeat center;
+.block-main {
+  background: url("./image/main-bg.jpg");
   background-size: cover;
-  width: 1440px;
-  height: 800px;
+  height: 750px;
 }
 
 .block-svg1 {
@@ -30,7 +28,7 @@ body {
 
 .block-svg3 {
   position: absolute;
-  bottom: 210px;
+  bottom: 350px;
   left: 929px;
   transform: rotate(130deg);
 }
@@ -117,7 +115,80 @@ body {
 }
 
 .block-animation {
-  bottom: 0;
-  left: 0;
+  position: absolute;
+  top: 710px;
   width: 100%;
+}
+
+.block-submain {
+  background: url("./image/second-bg.jpg");
+  background-size: cover;
+  height: 1242px;
+}
+
+.games-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 94px;
+}
+
+.game-card-link {
+  text-decoration: none;
+}
+
+.game-card {
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.game-image {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.game-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.game-number {
+  width: 108px;
+  height: 36px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: rgb(32, 32, 39);
+  background-color: rgb(247, 247, 247);
+  margin: 32px;
+  border-radius: 4px;
+  align-self: flex-start;
+  margin-bottom: 16px;
+  border-radius: 52px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 100%;
+  color: #333;
+  padding-left: 32px;
+  padding-bottom: 36px;
 }/*# sourceMappingURL=style.css.map */
