@@ -4,75 +4,19 @@
   box-sizing: border-box;
 }
 
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
 body {
   font-family: "Montserrat";
 }
 
 .block-main {
-  background: url("./image/main-bg.jpg");
-  background-size: cover;
-  height: 750px;
-}
-
-.block-svg1 {
-  position: absolute;
-  top: 69px;
-  left: 156px;
-}
-
-.block-svg2 {
-  position: absolute;
-  top: 94px;
-  left: 63px;
-}
-
-.block-svg3 {
-  position: absolute;
-  bottom: 350px;
-  left: 929px;
-  transform: rotate(130deg);
-}
-
-.block-svg4 {
-  position: absolute;
-  top: 538px;
-  left: 948px;
-}
-
-.block-svg5 {
-  position: absolute;
-  top: 568px;
-  left: 1013px;
-}
-
-.block-svg6 {
-  position: absolute;
-  top: 468px;
-  left: 1247px;
-}
-
-.block-svg7 {
-  position: absolute;
-  top: 0px;
-  left: 854px;
-}
-
-.block-svg8 {
-  position: absolute;
-  top: 254px;
-  left: 1067px;
-}
-
-.block-svg9 {
-  position: absolute;
-  top: 379px;
-  left: 1225px;
-}
-
-.block-svg10 {
-  position: absolute;
-  top: 663px;
-  left: 1345px;
+  background: url("./image/Big_ star.svg") 61vw -333px no-repeat, url("./image/Star 1.svg") 5vw 94px no-repeat, url("./image/Star 1.svg") 68vw 538px/37px no-repeat, url("./image/Star 3_1.svg") 11vw 69px no-repeat, url("./image/Star 4.svg") 72vw 568px/83px no-repeat, rgb(225, 255, 143);
+  padding-bottom: 156px;
+  padding-top: 196px;
 }
 
 .block-section {
@@ -86,19 +30,18 @@ body {
   font-size: 64px;
   font-weight: 700;
   line-height: 100%;
-  padding-bottom: 24px;
-  padding-top: 196px;
 }
 .block-section__description {
   font-size: 24px;
+  margin-top: 24px;
   font-weight: 400;
   line-height: 32px;
 }
 
 .block-button {
   margin-top: 48px;
-  width: 247px;
-  height: 66px;
+  padding: 16px 65px;
+  font: inherit;
   font-size: 24px;
   font-weight: 600;
   line-height: 29px;
@@ -115,24 +58,37 @@ body {
 }
 
 .block-animation {
-  position: absolute;
   top: 710px;
   width: 100%;
+  background-color: rgb(188, 236, 48);
 }
 
-.block-submain {
-  background: url("./image/second-bg.jpg");
-  background-size: cover;
-  height: 1242px;
+.game {
+  background: url(./image/Star\ 2_1.svg) 70vw 77px no-repeat, url("./image/Star2_2.svg") 3vw 822px/55px no-repeat, url("./image/Star2_2.svg") 2vw 770px/31px no-repeat, black;
+  padding-bottom: 50px;
+  padding-top: 94px;
+}
+.game__title {
+  color: white;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 100%;
+}
+.game__description {
+  margin-top: 24px;
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  max-width: 765px;
 }
 
 .games-container {
+  margin-top: 72px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-top: 94px;
+  align-items: start;
+  grid-template-columns: repeat(auto-fit, minmax(378px, 4fr));
+  gap: 32px;
 }
 
 .game-card-link {
@@ -140,6 +96,7 @@ body {
 }
 
 .game-card {
+  grid-column: span 4;
   background-color: white;
   border-radius: 16px;
   overflow: hidden;
