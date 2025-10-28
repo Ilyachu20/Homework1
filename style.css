@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -19,19 +23,19 @@ body {
   padding-top: 196px;
 }
 
-.block-section {
+.block-main {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   padding-left: 120px;
 }
-.block-section__title {
+.block-main__title {
   font-size: 64px;
   font-weight: 700;
   line-height: 100%;
 }
-.block-section__description {
+.block-main__description {
   font-size: 24px;
   margin-top: 24px;
   font-weight: 400;
@@ -45,8 +49,8 @@ body {
   font-size: 24px;
   font-weight: 600;
   line-height: 29px;
-  border: 1px solid #000;
-  background: black;
+  border: 1px solid #202027;
+  background: #202027;
   color: white;
   border-radius: 30px;
   cursor: pointer;
@@ -54,7 +58,7 @@ body {
 
 .block-button:hover {
   background-color: white;
-  color: black;
+  color: #202027;
 }
 
 .block-animation {
@@ -62,9 +66,13 @@ body {
   width: 100%;
   background-color: rgb(188, 236, 48);
 }
+.block-animation__image {
+  top: 710px;
+  width: 100%;
+}
 
 .game {
-  background: url(./image/Star\ 2_1.svg) 70vw 77px no-repeat, url("./image/Star2_2.svg") 3vw 822px/55px no-repeat, url("./image/Star2_2.svg") 2vw 770px/31px no-repeat, black;
+  background: url(./image/Star\ 2_1.svg) 70vw 77px no-repeat, url("./image/Star2_2.svg") 3vw 822px/55px no-repeat, url("./image/Star2_2.svg") 2vw 770px/31px no-repeat, #202027;
   padding-bottom: 50px;
   padding-top: 94px;
 }
@@ -100,7 +108,7 @@ body {
   background-color: white;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px #202027;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -108,7 +116,7 @@ body {
 
 .game-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 20px #202027;
 }
 
 .game-image {
@@ -145,7 +153,7 @@ body {
   font-size: 32px;
   font-weight: 700;
   line-height: 100%;
-  color: #333;
+  color: rgb(39, 26, 88);
   padding-left: 32px;
   padding-bottom: 36px;
 }/*# sourceMappingURL=style.css.map */
